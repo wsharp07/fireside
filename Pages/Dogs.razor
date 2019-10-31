@@ -21,9 +21,17 @@ else
             @foreach (var dog in dogs)
             {
                 <tr>
-                    <td>@(count++)</td>
+                    <th scope="row">@(count++)</th>
                     <td>@dog.DogId</td>
                     <td>@dog.DogName</td>
+                    <td>
+                        <a href="/forms/altered/@dog.DogId">
+                            <button class="btn btn-primary">Spay/Neuter</button> 
+                        </a>
+                        <a href="/forms/rabies/@dog.DogId">
+                            <button class="btn btn-info">Rabies</button> 
+                        </a>
+                    </td>
                 </tr>
             }
         </tbody>
