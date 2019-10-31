@@ -1,0 +1,47 @@
+@inject HttpClient Http
+
+@if (dogs == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Dog ID</th>
+                <th>Dog Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var count = 1;
+            }
+            @foreach (var dog in dogs)
+            {
+                <tr>
+                    <td>@(count++)</td>
+                    <td>@dog.DogId</td>
+                    <td>@dog.DogName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Dog[] dogs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        dogs = await Http.GetJsonAsync<Dog[]>("sample-data/dogs.json");
+    }
+
+    public class Dog
+    {
+        public int DogId { get; set; }
+
+        public string DogName { get; set; }
+    }
+}
