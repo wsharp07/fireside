@@ -1,9 +1,15 @@
 @page "/forms/{DogId}"
 @inject HttpClient Http
 
-<h1> Form Data</h1>
-
 <div class="row">
+    <div class="row k9-header">
+        <div class="col-md-12">
+            <h1>K-9 Stray Rescue League Spay/Neuter Certification</h1>
+            <h4>2120 Metamora Rd.</h4>
+            <h4>Oxford MI, 48371</h4>
+            <h4>248-628-0435</h4>
+        </div>
+    </div>
     <div class="col-sm-6">
         <table class="k9-form table table-borderless">
             <tbody>
@@ -26,6 +32,20 @@
                 <tr>
                     <th scope="row">Born</th>
                     <td>@(currentDog.Born)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 offset-md-1 signature">
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <td class="signature"></td>
+                </tr>
+                <tr>
+                    <td>David Smith, D.V.M., #6901005915</td>
                 </tr>
             </tbody>
         </table>
