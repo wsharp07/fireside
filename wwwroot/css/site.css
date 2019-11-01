@@ -7,3 +7,37 @@ html, body {
 .container {
     margin-top: 15px;
 }
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  .k9-header {
+    background-color: #eee;
+    text-align: center;
+  }
+  
+  table.k9-form  {
+    font-size: 20px;
+  }
+  
+  div.signature {
+    padding-top: 50px;
+  }
+  
+  td.signature {
+    border-bottom: 1px solid #000;
+  }
+  
+  .form-toolbar {
+    padding: 10px 0 10px 0;
+  }
+  
+  .form-toolbar > button {
+    margin: 0 5px 0 5px;
+  }
+  
+  .no-dog-found {
+    font-style: italic;
+  }
