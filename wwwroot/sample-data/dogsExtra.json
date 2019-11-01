@@ -1,0 +1,26 @@
+[
+    {
+        "id": 14139429,
+        "name": "Zeus",
+        "breed": "Labrador Retriever / American Pit Bull Terrier / Mixed",
+        "color": "Black with White",
+        "gender": "Male",
+        "born": "3/13/2017"
+    },
+    {
+        "id": 14139432,
+        "name": "Clara",
+        "breed": "Boxer (short coat)",
+        "color": "Brindle",
+        "gender": "Female",
+        "born": "3/26/2016"
+    },
+    {
+        "id": 14200768,
+        "name": "Poppy",
+        "breed": "Shar Pei / Mixed (short coat)",
+        "color": "Black with White",
+        "gender": "Female",
+        "born": "12/3/2018"
+    }
+]
